@@ -1,0 +1,30 @@
+version: "3"
+services:
+  backend:
+    container_name: springboot
+    build: ./springboot
+    networks:
+      - front
+      - back
+    depends_on: 
+      - database
+
+  database:
+    container_name: pgsql
+    build: ./postgresql
+    networks:
+      - back
+
+  httpd:
+    container_name: front_web
+    build: ./httpd
+    ports: 
+      - 80:80
+    networks: 
+      - front
+    depends_on: 
+      - backend
+
+networks:
+  front:
+  back:

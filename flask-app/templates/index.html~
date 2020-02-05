@@ -1,0 +1,25 @@
+<html>
+<head>
+<style type="text/css">
+body​{
+background : black;
+color : white;
+}
+div.container{
+max-width : 500 px;
+margin : 100 px auto;
+border: 20 px solid white;
+padding : 10​ px;
+text-align : center;
+}
+h4{
+text-transform : uppercase;
+}
+</style>
+</head>
+<body​>
+<div class="container​">
+<h4>Cat Gif of the day</h4>
+<img src="{{url}}" />
+<p><small​>Courtesy : <a href="​http://www.buzzfeed.com/copyranter/the-best-cat-gif-post-in-the-history-of-cat-gifs​">Buzzfed</a></small></p>
+</div></body></html>
